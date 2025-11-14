@@ -164,9 +164,9 @@ model_list:
 litellm_settings:
   drop_params: true
   set_verbose: false
-  fallbacks: [{"moonshotai/kimi-k2-thinking": ["smart-model"]}]
-  fallbacks: [{"smart-model": ["gpt-5-mini"]}]
-
+  fallbacks:
+    - {"moonshotai/kimi-k2-thinking": ["smart-model"]}
+    - {"smart-model": ["gpt-5-mini"]}
 
 router_settings:
   routing_strategy: simple-shuffle  # or another supported strategy
