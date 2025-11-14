@@ -130,6 +130,45 @@ model_list:
       api_key: os.environ/LLM7_API_KEY
       rpm: 60
 
+
+  #z.ai free
+  - model_name: glm-4.5-flash
+    litellm_params:
+      model: openai/glm-4.5-flash
+      api_base: https://api.z.ai/api/paas/v4
+      api_key: os.environ/ZAI_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: true
+
+  #routehub
+  - model_name: minimaxai/minimax-m2
+    litellm_params:
+      model: openai/minimax-m2:free
+      api_base: https://api.routeway.ai/v1/
+      api_key: os.environ/ROUTEWAY_API_KEY
+      rpm: 20
+    model_info:
+      supports_function_calling: true
+      
+    #nvidia nim
+  - model_name: minimaxai/minimax-m2
+    litellm_params:
+      model: nvidia_nim/minimaxai/minimax-m2  # add nvidia_nim/ prefix to route as Nvidia NIM provider
+      api_key: os.environ/NIM_API_KEY
+      rpm: 40
+    
+  # vercel ai gateway
+  - model_name: moonshotai/kimi-k2-thinking
+    litellm_params:
+      model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
+      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
+
+  - model_name: grok-4
+    litellm_params:
+      model: vercel_ai_gateway/xai/grok-4
+      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
+
 # General Settings
 litellm_settings:
   drop_params: true
