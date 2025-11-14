@@ -145,7 +145,7 @@ model_list:
       model: vercel_ai_gateway/xai/grok-4
       api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
 
-  - model_name: smart-model
+  - model_name: smart-model-kimi
     litellm_params:
       model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
       api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
@@ -164,6 +164,9 @@ model_list:
 litellm_settings:
   drop_params: true
   set_verbose: false
+  fallbacks: [{"moonshotai/kimi-k2-thinking": ["smart-model"]}]
+  fallbacks: [{"smart-model": ["gpt-5-mini"]}]
+
 
 router_settings:
   routing_strategy: simple-shuffle  # or another supported strategy
