@@ -120,17 +120,17 @@ model_list:
       model: vercel_ai_gateway/xai/grok-4
       api_key: ${VERCEL_AI_GATEWAY_API_KEY}
 
-  - model_name: smart-model-kimi
+  - model_name: smart-model
     litellm_params:
       model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
       api_key: ${VERCEL_AI_GATEWAY_API_KEY}
 
-  - model_name: smart-model-grok
+  - model_name: smart-model
     litellm_params:
       model: vercel_ai_gateway/xai/grok-4
       api_key: ${VERCEL_AI_GATEWAY_API_KEY}
 
-  - model_name: smart-model-zai
+  - model_name: smart-model
     litellm_params:
       model: openai/glm-4.5-flash
       api_base: https://api.z.ai/api/paas/v4
