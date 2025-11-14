@@ -1,0 +1,146 @@
+model_list:
+  # OpenAI Models
+  - model_name: gpt-4.1-nano
+    litellm_params:
+      model: openai/gpt-4.1-nano-2025-04-14
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: true
+      
+  - model_name: gpt-4.1
+    litellm_params:
+      model: openai/gpt-4.1-2025-04-14
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: true
+      
+  - model_name: gpt-5-mini
+    litellm_params:
+      model: openai/gpt-5-mini
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: true
+      
+  - model_name: gpt-o4-mini
+    litellm_params:
+      model: openai/gpt-o4-mini-2025-04-16
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: true
+
+  # DeepSeek Models
+  - model_name: deepseek-v3.1
+    litellm_params:
+      model: openai/deepseek-v3.1
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: true
+
+  # Mistral Models
+  - model_name: mistral-small
+    litellm_params:
+      model: openai/mistral-small-3.1-24b-instruct-2503
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: true
+      
+  - model_name: codestral-2405
+    litellm_params:
+      model: openai/codestral-2405
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: true
+      max_tokens: 32000
+      
+  - model_name: codestral-2501
+    litellm_params:
+      model: openai/codestral-2501
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: true
+      max_tokens: 32000
+
+  # Gemini Models
+  - model_name: gemini-2.5-flash-lite
+    litellm_params:
+      model: openai/gemini-2.5-flash-lite
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: true
+      
+  - model_name: gemini-search
+    litellm_params:
+      model: openai/gemini-search
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: true
+
+  # Other Models
+  - model_name: llama-3.1-8b
+    litellm_params:
+      model: openai/llama-3.1-8B-instruct
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: false
+      
+  - model_name: bidara
+    litellm_params:
+      model: openai/bidara
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: false
+      
+  - model_name: glm-4.5-flash
+    litellm_params:
+      model: openai/glm-4.5-flash
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+    model_info:
+      supports_function_calling: true
+      
+  - model_name: rtist
+    litellm_params:
+      model: openai/rtist
+      api_base: https://api.llm7.io/v1
+      api_key: os.environ/LLM7_API_KEY
+      rpm: 60
+
+# General Settings
+litellm_settings:
+  drop_params: true
+  set_verbose: false
+  
+# Optional: Router settings for load balancing
+router_settings:
+  routing_strategy: simple-shuffle
+  num_retries: 2
+  timeout: 60
+  
+# Optional: Success/Failure callbacks
+# success_callback: ["langfuse"]
+# failure_callback: ["langfuse"]
