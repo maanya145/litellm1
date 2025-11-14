@@ -19,4 +19,4 @@ COPY config.yaml /app/config.yaml
 EXPOSE 4000
 
 # Start the proxy using your config
-CMD ["litellm", "--config", "config.yaml", "proxy"]
+CMD ["litellm", "--config", "config.yaml"]
