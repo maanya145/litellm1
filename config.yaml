@@ -138,19 +138,40 @@ model_list:
   - model_name: moonshotai/kimi-k2-thinking
     litellm_params:
       model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
+      api_key: os.environ/VERCELAI1
+      
+  - model_name: moonshotai/kimi-k2-thinking
+    litellm_params:
+      model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
+      api_key: os.environ/VERCELAI2
+      
+  - model_name: moonshotai/kimi-k2-thinking
+    litellm_params:
+      model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
       api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
 
   - model_name: grok-4
     litellm_params:
       model: vercel_ai_gateway/xai/grok-4
-      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
+      api_key: os.environ/VERCELAI1
 
-  - model_name: smart-model-kimi
+
+   - model_name: gpt-5
     litellm_params:
-      model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
+      model: vercel_ai_gateway/openai/gpt-5
+      api_key: os.environ/VERCELAI1
+      
+  - model_name: gpt-5
+    litellm_params:
+      model: vercel_ai_gateway/openai/gpt-5
+      api_key: os.environ/VERCELAI2
+      
+  - model_name: gpt-5
+    litellm_params:
+      model: vercel_ai_gateway/openai/gpt-5
       api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
       
-  - model_name: openai/gpt-5
+  - model_name: gpt-5
     litellm_params:
       model: openai/gpt-5
       api_base: https://api.voidai.app/v1
@@ -172,8 +193,9 @@ litellm_settings:
   drop_params: true
   set_verbose: false
   fallbacks:
-    - {"moonshotai/kimi-k2-thinking": ["smart-model"]}
-    - {"smart-model": ["gpt-5-mini"]}
+    - {"moonshotai/kimi-k2-thinking": ["grok-4"]}
+    - {"grok-4": ["gpt-5"]}
+    - {"gpt-5": ["glm-4.5-flash"]}
 
 router_settings:
   routing_strategy: simple-shuffle  # or another supported strategy
