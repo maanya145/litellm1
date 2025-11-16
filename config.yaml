@@ -204,7 +204,7 @@ router_settings:
   
 mcp_servers:
   sequential_thinking:
-    url: "https://server.smithery.ai/@smithery-ai/server-sequential-thinking/mcp"
+    url: "https://server.smithery.ai/@sylweriusz/mcp-neo4j-memory-server/mcp"
     static_headers: # These headers will be requested to the MCP server
       x-api-key: os.environ/SMITHERY_API_KEY
       profile: "subjective-cat-qX93Yx"
