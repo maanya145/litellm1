@@ -205,6 +205,7 @@ router_settings:
 mcp_servers:
   sequential_thinking:
     url: "https://server.smithery.ai/@smithery-ai/server-sequential-thinking/mcp"
-    auth_type: "api_key"
-    auth_value: os.environ/SMITHERY_API_KEY
+    static_headers: # These headers will be requested to the MCP server
+      x-api-key: os.environ/SMITHERY_API_KEY
+      profile: "subjective-cat-qX93Yx"
   
