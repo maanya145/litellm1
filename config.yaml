@@ -156,7 +156,7 @@ model_list:
       model: vercel_ai_gateway/xai/grok-4
       api_key: os.environ/VERCELAI1
 
- - model_name: gpt-5
+  - model_name: gpt-5
     litellm_params:
       model: openai/gpt-5
       api_base: https://api2.aigcbest.top/v1
@@ -176,7 +176,7 @@ model_list:
       api_base: https://chatapi.littlewheat.com/v1
       api_key: os.environ/LW1_API_KEY
       rpm: 40
-      
+
   - model_name: gpt-5
     litellm_params:
       model: vercel_ai_gateway/openai/gpt-5
@@ -222,7 +222,7 @@ router_settings:
   routing_strategy: simple-shuffle
   num_retries: 3
   timeout: 60
-  
+
 mcp_servers:
   sequential_thinking:
     url: "https://server.smithery.ai/@smithery-ai/server-sequential-thinking/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx"
@@ -230,4 +230,3 @@ mcp_servers:
     url: "https://server.smithery.ai/@sylweriusz/mcp-neo4j-memory-server/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx"
   discord:
     url: "https://server.smithery.ai/@codebyyassine/discordselfbot-mcp/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx"
-  
