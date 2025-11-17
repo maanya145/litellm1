@@ -156,6 +156,27 @@ model_list:
       model: vercel_ai_gateway/xai/grok-4
       api_key: os.environ/VERCELAI1
 
+ - model_name: gpt-5
+    litellm_params:
+      model: openai/gpt-5
+      api_base: https://api2.aigcbest.top/v1
+      api_key: os.environ/AIGC1_API_KEY
+      rpm: 40
+
+  - model_name: gpt-5
+    litellm_params:
+      model: openai/gpt-5
+      api_base: https://api2.aigcbest.top/v1
+      api_key: os.environ/AIGC2_API_KEY
+      rpm: 40
+
+  - model_name: gpt-5
+    litellm_params:
+      model: openai/gpt-5
+      api_base: https://chatapi.littlewheat.com/v1
+      api_key: os.environ/LW1_API_KEY
+      rpm: 40
+      
   - model_name: gpt-5
     litellm_params:
       model: vercel_ai_gateway/openai/gpt-5
