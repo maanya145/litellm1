@@ -151,6 +151,21 @@ model_list:
       model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
       api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
 
+  - model_name: grok-4-fast-reasoning
+    litellm_params:
+      model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+      api_key: os.environ/VERCELAI1
+
+  - model_name: grok-4-fast-reasoning
+    litellm_params:
+      model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+      api_key: os.environ/VERCELAI1
+
+  - model_name: grok-4-fast-reasoning
+    litellm_params:
+      model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+      api_key: os.environ/VERCELAI1
+      
   - model_name: grok-4
     litellm_params:
       model: vercel_ai_gateway/xai/grok-4
