@@ -154,17 +154,33 @@ model_list:
   - model_name: grok-4-fast-reasoning
     litellm_params:
       model: vercel_ai_gateway/xai/grok-4-fast-reasoning
-      api_key: os.environ/VERCELAI1
+      api_key: os.environ/VERCELAI2
+    
+
+  - model_name: grok-4-fast-reasoning
+    litellm_params:
+      model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
 
   - model_name: grok-4-fast-reasoning
     litellm_params:
       model: vercel_ai_gateway/xai/grok-4-fast-reasoning
       api_key: os.environ/VERCELAI1
-
-  - model_name: grok-4-fast-reasoning
+      
+  - model_name: gemini-3-pro-preview
     litellm_params:
-      model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+      model: vercel_ai_gateway/google/gemini-3-pro-preview
+      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
+      
+  - model_name: gemini-3-pro-preview
+    litellm_params:
+      model: vercel_ai_gateway/google/gemini-3-pro-preview
       api_key: os.environ/VERCELAI1
+      
+  - model_name: gemini-3-pro-preview
+    litellm_params:
+      model: vercel_ai_gateway/google/gemini-3-pro-preview
+      api_key: os.environ/VERCELAI2
       
   - model_name: grok-4
     litellm_params:
