@@ -182,7 +182,7 @@ model_list:
       model: vercel_ai_gateway/google/gemini-3-pro-preview
       api_key: os.environ/VERCELAI2
       
-   model_name: text-embedding-3-small
+  - model_name: text-embedding-3-small
     litellm_params:
       model: vercel_ai_gateway/openai/text-embedding-3-small
       api_key: os.environ/VERCELAI1
