@@ -38,7 +38,7 @@ model_list:
   # Groq Deployment
   - model_name: gpt-oss-120b
     litellm_params:
-      model: groq/gpt-oss-120b
+      model: groq/openai/gpt-oss-120b
       api_key: os.environ/GROQ_API_KEY
 
   - model_name: gpt-4.1
