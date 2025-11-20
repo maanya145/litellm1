@@ -9,14 +9,38 @@ model_list:
     model_info:
       supports_function_calling: true
 
+  # Perplexity Sonar Pro Load Balancing
+  - model_name: sonar-pro
+    litellm_params:
+      model: perplexity/sonar-pro
+      api_key: os.environ/PPLX1
+
+  - model_name: sonar-pro
+    litellm_params:
+      model: perplexity/sonar-pro
+      api_key: os.environ/PPLX2
+
+  - model_name: sonar-pro
+    litellm_params:
+      model: perplexity/sonar-pro
+      api_key: os.environ/PPLX3
+
+  - model_name: sonar-pro
+    litellm_params:
+      model: perplexity/sonar-pro
+      api_key: os.environ/PPLX4
+
+  - model_name: sonar-pro
+    litellm_params:
+      model: perplexity/sonar-pro
+      api_key: os.environ/PPLX5
+
   - model_name: gpt-4.1
     litellm_params:
       model: openai/gpt-4.1-2025-04-14
       api_base: https://api.llm7.io/v1
       api_key: os.environ/LLM7_API_KEY
       rpm: 60
-    model_info:
-      supports_function_calling:
 
   - model_name: gpt-4.1-nano
     litellm_params:
@@ -155,7 +179,6 @@ model_list:
     litellm_params:
       model: vercel_ai_gateway/xai/grok-4-fast-reasoning
       api_key: os.environ/VERCELAI2
-    
 
   - model_name: grok-4-fast-reasoning
     litellm_params:
@@ -166,34 +189,34 @@ model_list:
     litellm_params:
       model: vercel_ai_gateway/xai/grok-4-fast-reasoning
       api_key: os.environ/VERCELAI1
-      
+
   - model_name: gemini-3-pro-preview
     litellm_params:
       model: vercel_ai_gateway/google/gemini-3-pro-preview
       api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
-      
+
   - model_name: gemini-3-pro-preview
     litellm_params:
       model: vercel_ai_gateway/google/gemini-3-pro-preview
       api_key: os.environ/VERCELAI1
-      
+
   - model_name: gemini-3-pro-preview
     litellm_params:
       model: vercel_ai_gateway/google/gemini-3-pro-preview
       api_key: os.environ/VERCELAI2
-      
+
   - model_name: text-embedding-3-small
     litellm_params:
       api_base: https://ai-gateway.vercel.sh/v1
       model: openai/text-embedding-3-small
       api_key: os.environ/VERCELAI1
-      
+
   - model_name: text-embedding-3-small
     litellm_params:
       api_base: https://ai-gateway.vercel.sh/v1
       model: openai/text-embedding-3-small
       api_key: os.environ/VERCELAI2
-      
+
   - model_name: grok-4
     litellm_params:
       model: vercel_ai_gateway/xai/grok-4
@@ -220,7 +243,7 @@ model_list:
       api_base: https://api.voidai.app/v1
       api_key: os.environ/VOIDAI_API_KEY
       rpm: 40
-      
+
   - model_name: gpt-5
     litellm_params:
       model: openai/gpt-5
