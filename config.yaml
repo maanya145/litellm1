@@ -34,7 +34,22 @@ model_list:
     litellm_params:
       model: perplexity/sonar-pro
       api_key: os.environ/PPLX5
+      
+  - model_name: gemini-2.0-flash-lite
+    litellm_params:
+      model: vercel_ai_gateway/google/gemini-2.0-flash-lite
+      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
 
+  - model_name: gemini-2.0-flash-lite
+    litellm_params:
+      model: vercel_ai_gateway/google/gemini-2.0-flash-lite
+      api_key: os.environ/VERCELAI1
+
+  - model_name: gemini-2.0-flash-lite
+    litellm_params:
+      model: vercel_ai_gateway/google/gemini-2.0-flash-lite
+      api_key: os.environ/VERCELAI2
+      
   # Groq Deployment
   - model_name: gpt-oss-120b
     litellm_params:
