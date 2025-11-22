@@ -305,10 +305,21 @@ model_list:
 litellm_settings:
   drop_params: true
   set_verbose: false
+  # Standard fallbacks for API errors/outages
   fallbacks:
     - {"moonshotai/kimi-k2-thinking": ["grok-4"]}
     - {"grok-4": ["gpt-5"]}
     - {"gpt-5": ["glm-4.5-flash"]}
+  
+  # Specific fallbacks for Context Window Exceeded errors
+  context_window_fallbacks:
+    - {"gpt-5": ["gemini-2.5-flash-lite"]}
+    - {"grok-4": ["gemini-2.5-flash-lite"]}
+    - {"grok-4-fast-reasoning": ["gemini-2.5-flash-lite"]}
+    - {"sonar-pro": ["gemini-2.5-flash-lite"]}
+    - {"gpt-4.1": ["gemini-2.5-flash-lite"]}
+    - {"moonshotai/kimi-k2-thinking": ["gemini-2.5-flash-lite"]}
+    - {"smart-model": ["gemini-2.5-flash-lite"]}
 
 router_settings:
   routing_strategy: simple-shuffle
