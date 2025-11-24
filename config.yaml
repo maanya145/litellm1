@@ -216,6 +216,24 @@ model_list:
       model: vercel_ai_gateway/xai/grok-4-fast-reasoning
       api_key: os.environ/VERCELAI1
 
+
+#grok 4.1 reasoning
+  - model_name: grok-4.1-fast-reasoning
+    litellm_params:
+      model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+      api_key: os.environ/VERCELAI2
+
+  - model_name: grok-4.1-fast-reasoning
+    litellm_params:
+      model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
+
+  - model_name: grok-4.1-fast-reasoning
+    litellm_params:
+      model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+      api_key: os.environ/VERCELAI1
+#end
+
   - model_name: gemini-3-pro-preview
     litellm_params:
       model: vercel_ai_gateway/google/gemini-3-pro-preview
@@ -308,7 +326,8 @@ litellm_settings:
   # Standard fallbacks for API errors/outages
   fallbacks:
     - {"moonshotai/kimi-k2-thinking": ["grok-4"]}
-    - {"grok-4": ["gpt-5"]}
+    - {"grok-4.1-fast-reasoning": ["grok-4-fast-reasoning"]}
+    - {"grok-4-fast-reasoning": ["gpt-5"]}
     - {"moonshotai/kimi-k2-thinking": ["gemini-2.5-flash-lite"]}
     - {"gpt-5": ["glm-4.5-flash"]}
   
