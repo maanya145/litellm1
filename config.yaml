@@ -354,7 +354,7 @@ litellm_settings:
     - {"grok-4-fast-reasoning": ["gemini-2.5-flash-lite"]}
     - {"sonar-pro": ["gemini-2.5-flash-lite"]}
     - {"gpt-4.1": ["gemini-2.5-flash-lite"]}
-    - {"moonshotai/kimi-k2-thinking": ["gemini-2.5-flash-lite"]}
+    - {"kimi-k2-instruct-0905": ["gemini-2.5-flash-lite"]}
     - {"smart-model": ["gemini-2.5-flash-lite"]}
 
 router_settings:
