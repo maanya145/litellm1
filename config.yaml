@@ -468,7 +468,7 @@ litellm_settings:
   set_verbose: false
 
   fallbacks:
-    - "gemini-3-flash": ["gpt-5", "gpt-oss-120b" "moonshotai/kimi-k2-thinking"]
+    - "gemini-3-flash": ["gpt-5", "gpt-oss-120b", "moonshotai/kimi-k2-thinking"]
     - "moonshotai/kimi-k2-thinking": ["glm-4.5-flash", "gpt-5", "grok-4.1-fast-reasoning"]
     - "grok-4.1-fast-reasoning": ["grok-4-fast-reasoning", "gpt-5", "glm-4.5-flash"]
     - "grok-4-fast-reasoning": ["gpt-5", "glm-4.5-flash"]
