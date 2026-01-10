@@ -6,11 +6,13 @@ model_list:
     litellm_params:
       model: mistral/mistral-embed
       api_key: os.environ/MISTRAL_API_KEY
+      tpm: 20000000
   
   - model_name: mistral-embed
     litellm_params:
       model: mistral/mistral-embed
       api_key: os.environ/MISTRAL1_API_KEY
+      tpm: 20000000
       
   - model_name: gpt-4.1-nano
     litellm_params:
