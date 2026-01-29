@@ -571,7 +571,7 @@ litellm_settings:
     - "grok-4-fast-reasoning": ["gpt-5", "glm-4.5-flash"]
     - "gpt-5": ["gpt-oss-120b"]
     - "kimi-k2-instruct-0905": ["gemini-2.5-flash-lite"]
-    - "moonshotai/kimi-k2.5": ["deepseek-ai/deepseek-v3.2", "gemini-3-flash"]
+    - "moonshotai/kimi-k2.5": ["z-ai/glm4.7", "gpt-5", "gemini-3-flash"]
     
   context_window_fallbacks:
     - "gpt-5": ["gemini-2.5-flash-lite"]
