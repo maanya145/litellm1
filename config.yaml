@@ -265,56 +265,56 @@ model_list:
       id: nim-deepseek-3.2
 
 
- # ----------------------------
- # NVIDIA NIM - Additional Deployments
- # ----------------------------
+  # ----------------------------
+  # NVIDIA NIM - Additional Deployments
+  # ----------------------------
+  - model_name: moonshotai/kimi-k2.5
+    litellm_params:
+      model: nvidia_nim/moonshotai/kimi-k2.5
+      api_key: os.environ/NIM2_KEY
+      rpm: 40
+    model_info:
+      id: nim-kimi-k2.5-2
 
- - model_name: moonshotai/kimi-k2.5
- litellm_params:
- model: nvidia_nim/moonshotai/kimi-k2.5
- api_key: os.environ/NIM2_KEY
- rpm: 40
- model_info:
- id: nim-kimi-k2.5-2
+  - model_name: deepseek-ai/deepseek-v3.2
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-v3.2
+      api_key: os.environ/NIM1_KEY
+      rpm: 40
+    model_info:
+      id: nim-deepseek-3.2-3
 
- - model_name: deepseek-ai/deepseek-v3.2
- litellm_params:
- model: nvidia_nim/deepseek-ai/deepseek-v3.2
- api_key: os.environ/NIM1_KEY
- rpm: 40
- model_info:
- id: nim-deepseek-3.2-3
+  - model_name: deepseek-ai/deepseek-v3.2
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-v3.2
+      api_key: os.environ/NIM2_KEY
+      rpm: 40
+    model_info:
+      id: nim-deepseek-3.2-4
 
- - model_name: deepseek-ai/deepseek-v3.2
- litellm_params:
- model: nvidia_nim/deepseek-ai/deepseek-v3.2
- api_key: os.environ/NIM2_KEY
- rpm: 40
- model_info:
- id: nim-deepseek-3.2-4
+  - model_name: z-ai/glm4.7
+    litellm_params:
+      model: nvidia_nim/z-ai/glm4.7
+      api_key: os.environ/NIM1_KEY
+      rpm: 40
+    model_info:
+      id: nim-zai-glm4.7-1
 
- - model_name: z-ai/glm4.7
- litellm_params:
- model: nvidia_nim/z-ai/glm4.7
- api_key: os.environ/NIM1_KEY
- rpm: 40
- model_info:
- id: nim-zai-glm4.7-1
+  - model_name: z-ai/glm4.7
+    litellm_params:
+      model: nvidia_nim/z-ai/glm4.7
+      api_key: os.environ/NIM2_KEY
+      rpm: 40
+    model_info:
+      id: nim-zai-glm4.7-2
 
- - model_name: z-ai/glm4.7
- litellm_params:
- model: nvidia_nim/z-ai/glm4.7
- api_key: os.environ/NIM2_KEY
- rpm: 40
- model_info:
- id: nim-zai-glm4.7-2
- - model_name: z-ai/glm4.7
- litellm_params:
- model: nvidia_nim/z-ai/glm4.7
- api_key: os.environ/NIM_API_KEY
- rpm: 40
- model_info:
- id: nim-zai-glm4.7-3
+  - model_name: z-ai/glm4.7
+    litellm_params:
+      model: nvidia_nim/z-ai/glm4.7
+      api_key: os.environ/NIM_API_KEY
+      rpm: 40
+    model_info:
+      id: nim-zai-glm4.7-3
   # ----------------------------
   # Vercel AI Gateway
   # ----------------------------
