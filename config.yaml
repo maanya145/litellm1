@@ -231,6 +231,14 @@ model_list:
       rpm: 40
     model_info:
       id: nim-minimax-m2
+      
+  - model_name: moonshot/kimi-k2.5
+    litellm_params:
+      model: nvidia_nim/moonshot/kimi-k2.5
+      api_key: os.environ/NIM_API_KEY
+      rpm: 40
+    model_info:
+      id: nim-kimi-k2.5
 
   # ----------------------------
   # Vercel AI Gateway
