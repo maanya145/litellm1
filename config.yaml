@@ -1,602 +1,523 @@
 model_list:
-  # ----------------------------
-  # OpenAI via LLM7
-  # ----------------------------
-  - model_name: mistral-embed
-    litellm_params:
-      model: mistral/mistral-embed
-      api_key: os.environ/MISTRAL_API_KEY
-      tpm: 20000000
-      rpm: 50
-  
-  - model_name: mistral-embed
-    litellm_params:
-      model: mistral/mistral-embed
-      api_key: os.environ/MISTRAL1_API_KEY
-      tpm: 20000000
-      rpm: 50
-      
-  - model_name: gpt-4.1-nano
-    litellm_params:
-      model: openai/gpt-4.1-nano-2025-04-14
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-gpt-4.1-nano
-      supports_function_calling: true
-
-  - model_name: gpt-4.1
-    litellm_params:
-      model: openai/gpt-4.1-2025-04-14
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-gpt-4.1
-
-  - model_name: gpt-5-mini
-    litellm_params:
-      model: openai/gpt-5-mini
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-gpt-5-mini
-
-  - model_name: gpt-o4-mini
-    litellm_params:
-      model: openai/gpt-o4-mini-2025-04-16
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-gpt-o4-mini
-
-  - model_name: deepseek-v3.1
-    litellm_params:
-      model: openai/deepseek-v3.1
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-deepseek-v3.1
-
-  - model_name: mistral-small
-    litellm_params:
-      model: openai/mistral-small-3.1-24b-instruct-2503
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-mistral-small-3.1
-
-  - model_name: codestral-2405
-    litellm_params:
-      model: openai/codestral-2405
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-codestral-2405
-
-  - model_name: codestral-2501
-    litellm_params:
-      model: openai/codestral-2501
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-codestral-2501
-
-  - model_name: gemini-2.5-flash-lite
-    litellm_params:
-      model: openai/gemini-2.5-flash-lite
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-gemini-2.5-flash-lite
-
-  - model_name: gemini-search
-    litellm_params:
-      model: openai/gemini-search
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-gemini-search
-
-  - model_name: llama-3.1-8b
-    litellm_params:
-      model: openai/llama-3.1-8B-instruct
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-llama-3.1-8b
-
-  - model_name: bidara
-    litellm_params:
-      model: openai/bidara
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-bidara
-
-  - model_name: glm-4.5-flash
-    litellm_params:
-      model: openai/glm-4.5-flash
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-glm-4.5-flash
-
-  - model_name: rtist
-    litellm_params:
-      model: openai/rtist
-      api_base: https://api.llm7.io/v1
-      api_key: os.environ/LLM7_API_KEY
-      rpm: 60
-    model_info:
-      id: llm7-openai-rtist
-
-  # ----------------------------
-  # Perplexity Sonar Pro
-  # ----------------------------
-  - model_name: sonar-pro
-    litellm_params:
-      model: perplexity/sonar-pro
-      api_key: os.environ/PPLX1
-    model_info:
-      id: pplx-sonar-pro-1
-
-  - model_name: sonar-pro
-    litellm_params:
-      model: perplexity/sonar-pro
-      api_key: os.environ/PPLX2
-    model_info:
-      id: pplx-sonar-pro-2
-
-  - model_name: sonar-pro
-    litellm_params:
-      model: perplexity/sonar-pro
-      api_key: os.environ/PPLX3
-    model_info:
-      id: pplx-sonar-pro-3
-
-  - model_name: sonar-pro
-    litellm_params:
-      model: perplexity/sonar-pro
-      api_key: os.environ/PPLX4
-    model_info:
-      id: pplx-sonar-pro-4
-
-  - model_name: sonar-pro
-    litellm_params:
-      model: perplexity/sonar-pro
-      api_key: os.environ/PPLX5
-    model_info:
-      id: pplx-sonar-pro-5
-
-  # ----------------------------
-  # Groq
-  # ----------------------------
-  - model_name: gpt-oss-120b
-    litellm_params:
-      model: groq/openai/gpt-oss-120b
-      api_key: os.environ/GROQ_API_KEY
-      rpm: 30
-    model_info:
-      id: groq-gpt-oss-120b
-
-  - model_name: kimi-k2-instruct-0905
-    litellm_params:
-      model: groq/moonshotai/kimi-k2-instruct-0905
-      api_key: os.environ/GROQ_API_KEY
-      rpm: 30
-    model_info:
-      id: groq-kimi-k2-instruct-0905
-
-  # ----------------------------
-  # Z.AI
-  # ----------------------------
-  - model_name: glm-4.5-flash
-    litellm_params:
-      model: openai/glm-4.5-flash
-      api_base: https://api.z.ai/api/paas/v4
-      api_key: os.environ/ZAI_API_KEY
-      rpm: 60
-    model_info:
-      id: zai-glm-4.5-flash
-
-  # ----------------------------
-  # Minimax M2
-  # ----------------------------
-  - model_name: minimaxai/minimax-m2
-    litellm_params:
-      model: openai/minimax-m2:free
-      api_base: https://api.routeway.ai/v1/
-      api_key: os.environ/ROUTEWAY_API_KEY
-      rpm: 20
-    model_info:
-      id: routeway-minimax-m2-free
-
-  - model_name: minimaxai/minimax-m2
-    litellm_params:
-      model: nvidia_nim/minimaxai/minimax-m2
-      api_key: os.environ/NIM_API_KEY
-      rpm: 40
-    model_info:
-      id: nim-minimax-m2
-      
-  - model_name: moonshotai/kimi-k2.5
-    litellm_params:
-      model: nvidia_nim/moonshotai/kimi-k2.5
-      api_key: os.environ/NIM_API_KEY
-      rpm: 40
-    model_info:
-      id: nim-kimi-k2.
-      
-  - model_name: moonshotai/kimi-k2.5
-    litellm_params:
-      model: nvidia_nim/moonshotai/kimi-k2.5
-      api_key: os.environ/NIM1_KEY
-      rpm: 40
-    model_info:
-      id: nim-kimi-k2.5-1
-
-  - model_name: deepseek-ai/deepseek-v3.2
-    litellm_params:
-      model: nvidia_nim/deepseek-ai/deepseek-v3.2
-      api_key: os.environ/NIM1_KEY
-      rpm: 40
-    model_info:
-      id: nim-deepseek-3.2-1
-
-  - model_name: deepseek-ai/deepseek-v3.2
-    litellm_params:
-      model: nvidia_nim/deepseek-ai/deepseek-v3.2
-      api_key: os.environ/NIM_API_KEY
-      rpm: 40
-    model_info:
-      id: nim-deepseek-3.2
-
-
-  # ----------------------------
-  # NVIDIA NIM - Additional Deployments
-  # ----------------------------
-  - model_name: moonshotai/kimi-k2.5
-    litellm_params:
-      model: nvidia_nim/moonshotai/kimi-k2.5
-      api_key: os.environ/NIM2_KEY
-      rpm: 40
-    model_info:
-      id: nim-kimi-k2.5-2
-
-  - model_name: deepseek-ai/deepseek-v3.2
-    litellm_params:
-      model: nvidia_nim/deepseek-ai/deepseek-v3.2
-      api_key: os.environ/NIM1_KEY
-      rpm: 40
-    model_info:
-      id: nim-deepseek-3.2-3
-
-  - model_name: deepseek-ai/deepseek-v3.2
-    litellm_params:
-      model: nvidia_nim/deepseek-ai/deepseek-v3.2
-      api_key: os.environ/NIM2_KEY
-      rpm: 40
-    model_info:
-      id: nim-deepseek-3.2-4
-
-  - model_name: z-ai/glm4.7
-    litellm_params:
-      model: nvidia_nim/z-ai/glm4.7
-      api_key: os.environ/NIM1_KEY
-      rpm: 40
-    model_info:
-      id: nim-zai-glm4.7-1
-
-  - model_name: z-ai/glm4.7
-    litellm_params:
-      model: nvidia_nim/z-ai/glm4.7
-      api_key: os.environ/NIM2_KEY
-      rpm: 40
-    model_info:
-      id: nim-zai-glm4.7-2
-
-  - model_name: z-ai/glm4.7
-    litellm_params:
-      model: nvidia_nim/z-ai/glm4.7
-      api_key: os.environ/NIM_API_KEY
-      rpm: 40
-    model_info:
-      id: nim-zai-glm4.7-3
-  # ----------------------------
-  # Vercel AI Gateway
-  # ----------------------------
-  - model_name: gemini-2.5-flash-lite
-    litellm_params:
-      model: vercel_ai_gateway/google/gemini-2.5-flash-lite
-      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
-    model_info:
-      id: vercel-gw-gemini-2.5-flash-lite-main
-
-  - model_name: gemini-2.5-flash-lite
-    litellm_params:
-      model: vercel_ai_gateway/google/gemini-2.5-flash-lite
-      api_key: os.environ/VERCELAI1
-    model_info:
-      id: vercel-gw-gemini-2.5-flash-lite-1
-
-  - model_name: gemini-2.0-flash-lite
-    litellm_params:
-      model: vercel_ai_gateway/google/gemini-2.0-flash-lite
-      api_key: os.environ/VERCELAI2
-    model_info:
-      id: vercel-gw-gemini-2.0-flash-lite-2
-
-  - model_name: moonshotai/kimi-k2-thinking
-    litellm_params:
-      model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
-      api_key: os.environ/VERCELAI1
-    model_info:
-      id: vercel-gw-kimi-k2-thinking-1
-
-  - model_name: moonshotai/kimi-k2-thinking
-    litellm_params:
-      model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
-      api_key: os.environ/VERCELAI2
-    model_info:
-      id: vercel-gw-kimi-k2-thinking-2
-
-  - model_name: moonshotai/kimi-k2-thinking
-    litellm_params:
-      model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
-      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
-    model_info:
-      id: vercel-gw-kimi-k2-thinking-main
-
-  - model_name: grok-4-fast-reasoning
-    litellm_params:
-      model: vercel_ai_gateway/xai/grok-4-fast-reasoning
-      api_key: os.environ/VERCELAI2
-    model_info:
-      id: vercel-gw-grok-4-fast-reasoning-2
-
-  - model_name: grok-4-fast-reasoning
-    litellm_params:
-      model: vercel_ai_gateway/xai/grok-4-fast-reasoning
-      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
-    model_info:
-      id: vercel-gw-grok-4-fast-reasoning-main
-
-  - model_name: grok-4-fast-reasoning
-    litellm_params:
-      model: vercel_ai_gateway/xai/grok-4-fast-reasoning
-      api_key: os.environ/VERCELAI1
-    model_info:
-      id: vercel-gw-grok-4-fast-reasoning-1
-
-  - model_name: grok-4.1-fast-reasoning
-    litellm_params:
-      model: vercel_ai_gateway/xai/grok-4.1-fast-reasoning
-      api_key: os.environ/VERCELAI2
-    model_info:
-      id: vercel-gw-grok-4.1-fast-reasoning-2
-
-  - model_name: grok-4.1-fast-reasoning
-    litellm_params:
-      model: vercel_ai_gateway/xai/grok-4.1-fast-reasoning
-      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
-    model_info:
-      id: vercel-gw-grok-4.1-fast-reasoning-main
-
-  - model_name: grok-4.1-fast-reasoning
-    litellm_params:
-      model: vercel_ai_gateway/xai/grok-4.1-fast-reasoning
-      api_key: os.environ/VERCELAI1
-    model_info:
-      id: vercel-gw-grok-4.1-fast-reasoning-1
-
-  - model_name: gemini-3-pro-preview
-    litellm_params:
-      model: vercel_ai_gateway/google/gemini-3-pro-preview
-      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
-    model_info:
-      id: vercel-gw-gemini-3-pro-preview-main
-
-  - model_name: gemini-3-pro-preview
-    litellm_params:
-      model: vercel_ai_gateway/google/gemini-3-pro-preview
-      api_key: os.environ/VERCELAI1
-    model_info:
-      id: vercel-gw-gemini-3-pro-preview-1
-
-  - model_name: gemini-3-pro-preview
-    litellm_params:
-      model: vercel_ai_gateway/google/gemini-3-pro-preview
-      api_key: os.environ/VERCELAI2
-    model_info:
-      id: vercel-gw-gemini-3-pro-preview-2
-
-  # [UPDATED] Gemini 3 Flash (AI Studio) - Stricter Free Tier Limits (5 RPM / 250k TPM)
-  - model_name: gemini-3-flash
-    litellm_params:
-      model: gemini/gemini-3-flash-preview
-      api_key: os.environ/GEMINI_API_KEY_1
-      rpm: 5
-      tpm: 250000
-    model_info:
-      id: google-ai-studio-gemini-3-flash-1
-
-  - model_name: gemini-3-flash
-    litellm_params:
-      model: gemini/gemini-3-flash-preview
-      api_key: os.environ/GEMINI_API_KEY_2
-      rpm: 5
-      tpm: 250000
-    model_info:
-      id: google-ai-studio-gemini-3-flash-2
-
-  - model_name: gemini-3-flash
-    litellm_params:
-      model: gemini/gemini-3-flash-preview
-      api_key: os.environ/GEMINI_API_KEY_3
-      rpm: 5
-      tpm: 250000
-    model_info:
-      id: google-ai-studio-gemini-3-flash-3
-
-  # Vercel Gateway version
-  - model_name: gemini-3-flash
-    litellm_params:
-      model: vercel_ai_gateway/google/gemini-3-flash
-      api_key: os.environ/VERCELAI2
-    model_info:
-      id: vercel-gw-gemini-3-flash-2
-
-  - model_name: text-embedding-3-small
-    litellm_params:
-      api_base: https://ai-gateway.vercel.sh/v1
-      model: openai/text-embedding-3-small
-      api_key: os.environ/VERCELAI1
-    model_info:
-      id: vercel-embeddings-3-small-1
-
-  - model_name: text-embedding-3-small
-    litellm_params:
-      api_base: https://ai-gateway.vercel.sh/v1
-      model: openai/text-embedding-3-small
-      api_key: os.environ/VERCELAI2
-    model_info:
-      id: vercel-embeddings-3-small-2
-
-  - model_name: grok-4
-    litellm_params:
-      model: vercel_ai_gateway/xai/grok-4
-      api_key: os.environ/VERCELAI1
-    model_info:
-      id: vercel-gw-grok-4-1
-
-  - model_name: gpt-5
-    litellm_params:
-      model: vercel_ai_gateway/openai/gpt-5
-      api_key: os.environ/VERCELAI1
-    model_info:
-      id: vercel-gw-gpt-5-1
-
-  - model_name: gpt-5
-    litellm_params:
-      model: vercel_ai_gateway/openai/gpt-5
-      api_key: os.environ/VERCELAI2
-    model_info:
-      id: vercel-gw-gpt-5-2
-
-  - model_name: gpt-5
-    litellm_params:
-      model: vercel_ai_gateway/openai/gpt-5
-      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
-    model_info:
-      id: vercel-gw-gpt-5-main
-
-  # ----------------------------
-  # Non-Vercel gpt-5 backends
-  # ----------------------------
-  - model_name: gpt-5
-    litellm_params:
-      model: openai/gpt-5
-      api_base: https://api.voidai.app/v1
-      api_key: os.environ/VOIDAI_API_KEY
-      rpm: 40
-    model_info:
-      id: voidai-gpt-5
-
-  - model_name: gpt-5
-    litellm_params:
-      model: openai/gpt-5
-      api_base: https://api2.aigcbest.top/v1
-      api_key: os.environ/AIGC1_API_KEY
-      rpm: 4
-    model_info:
-      id: aigc1-gpt-5
-
-  - model_name: gpt-5
-    litellm_params:
-      model: openai/gpt-5
-      api_base: https://api2.aigcbest.top/v1
-      api_key: os.environ/AIGC2_API_KEY
-      rpm: 4
-    model_info:
-      id: aigc2-gpt-5
-
-  - model_name: gpt-5
-    litellm_params:
-      model: openai/gpt-5
-      api_base: https://chatapi.littlewheat.com/v1
-      api_key: os.environ/LW1_API_KEY
-      rpm: 4
-    model_info:
-      id: littlewheat-gpt-5
-
-  # ----------------------------
-  # Smart Model
-  # ----------------------------
-  - model_name: smart-model
-    litellm_params:
-      model: vercel_ai_gateway/xai/grok-4
-      api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
-    model_info:
-      id: smart-model-vercel-grok-4-main
-
-  - model_name: smart-model
-    litellm_params:
-      model: openai/glm-4.5-flash
-      api_base: https://api.z.ai/api/paas/v4
-      api_key: os.environ/ZAI_API_KEY
-    model_info:
-      id: smart-model-zai-glm-4.5-flash
-
+- model_name: mistral-embed
+  litellm_params:
+    model: mistral/mistral-embed
+    api_key: os.environ/MISTRAL_API_KEY
+    tpm: 20000000
+    rpm: 50
+- model_name: mistral-embed
+  litellm_params:
+    model: mistral/mistral-embed
+    api_key: os.environ/MISTRAL1_API_KEY
+    tpm: 20000000
+    rpm: 50
+- model_name: gpt-4.1-nano
+  litellm_params:
+    model: openai/gpt-4.1-nano-2025-04-14
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-gpt-4.1-nano
+    supports_function_calling: true
+- model_name: gpt-4.1
+  litellm_params:
+    model: openai/gpt-4.1-2025-04-14
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-gpt-4.1
+- model_name: gpt-5-mini
+  litellm_params:
+    model: openai/gpt-5-mini
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-gpt-5-mini
+- model_name: gpt-o4-mini
+  litellm_params:
+    model: openai/gpt-o4-mini-2025-04-16
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-gpt-o4-mini
+- model_name: deepseek-v3.1
+  litellm_params:
+    model: openai/deepseek-v3.1
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-deepseek-v3.1
+- model_name: mistral-small
+  litellm_params:
+    model: openai/mistral-small-3.1-24b-instruct-2503
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-mistral-small-3.1
+- model_name: codestral-2405
+  litellm_params:
+    model: openai/codestral-2405
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-codestral-2405
+- model_name: codestral-2501
+  litellm_params:
+    model: openai/codestral-2501
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-codestral-2501
+- model_name: gemini-2.5-flash-lite
+  litellm_params:
+    model: openai/gemini-2.5-flash-lite
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-gemini-2.5-flash-lite
+- model_name: gemini-search
+  litellm_params:
+    model: openai/gemini-search
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-gemini-search
+- model_name: llama-3.1-8b
+  litellm_params:
+    model: openai/llama-3.1-8B-instruct
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-llama-3.1-8b
+- model_name: bidara
+  litellm_params:
+    model: openai/bidara
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-bidara
+- model_name: glm-4.5-flash
+  litellm_params:
+    model: openai/glm-4.5-flash
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-glm-4.5-flash
+- model_name: rtist
+  litellm_params:
+    model: openai/rtist
+    api_base: https://api.llm7.io/v1
+    api_key: os.environ/LLM7_API_KEY
+    rpm: 60
+  model_info:
+    id: llm7-openai-rtist
+- model_name: sonar-pro
+  litellm_params:
+    model: perplexity/sonar-pro
+    api_key: os.environ/PPLX1
+  model_info:
+    id: pplx-sonar-pro-1
+- model_name: sonar-pro
+  litellm_params:
+    model: perplexity/sonar-pro
+    api_key: os.environ/PPLX2
+  model_info:
+    id: pplx-sonar-pro-2
+- model_name: sonar-pro
+  litellm_params:
+    model: perplexity/sonar-pro
+    api_key: os.environ/PPLX3
+  model_info:
+    id: pplx-sonar-pro-3
+- model_name: sonar-pro
+  litellm_params:
+    model: perplexity/sonar-pro
+    api_key: os.environ/PPLX4
+  model_info:
+    id: pplx-sonar-pro-4
+- model_name: sonar-pro
+  litellm_params:
+    model: perplexity/sonar-pro
+    api_key: os.environ/PPLX5
+  model_info:
+    id: pplx-sonar-pro-5
+- model_name: gpt-oss-120b
+  litellm_params:
+    model: groq/openai/gpt-oss-120b
+    api_key: os.environ/GROQ_API_KEY
+    rpm: 30
+  model_info:
+    id: groq-gpt-oss-120b
+- model_name: kimi-k2-instruct-0905
+  litellm_params:
+    model: groq/moonshotai/kimi-k2-instruct-0905
+    api_key: os.environ/GROQ_API_KEY
+    rpm: 30
+  model_info:
+    id: groq-kimi-k2-instruct-0905
+- model_name: glm-4.5-flash
+  litellm_params:
+    model: openai/glm-4.5-flash
+    api_base: https://api.z.ai/api/paas/v4
+    api_key: os.environ/ZAI_API_KEY
+    rpm: 60
+  model_info:
+    id: zai-glm-4.5-flash
+- model_name: minimaxai/minimax-m2
+  litellm_params:
+    model: openai/minimax-m2:free
+    api_base: https://api.routeway.ai/v1/
+    api_key: os.environ/ROUTEWAY_API_KEY
+    rpm: 20
+  model_info:
+    id: routeway-minimax-m2-free
+- model_name: minimaxai/minimax-m2
+  litellm_params:
+    model: nvidia_nim/minimaxai/minimax-m2
+    api_key: os.environ/NIM_API_KEY
+    rpm: 40
+  model_info:
+    id: nim-minimax-m2
+- model_name: moonshotai/kimi-k2.5
+  litellm_params:
+    model: nvidia_nim/moonshotai/kimi-k2.5
+    api_key: os.environ/NIM_API_KEY
+    rpm: 40
+  model_info:
+    id: nim-kimi-k2.
+- model_name: moonshotai/kimi-k2.5
+  litellm_params:
+    model: nvidia_nim/moonshotai/kimi-k2.5
+    api_key: os.environ/NIM1_KEY
+    rpm: 40
+  model_info:
+    id: nim-kimi-k2.5-1
+- model_name: deepseek-ai/deepseek-v3.2
+  litellm_params:
+    model: nvidia_nim/deepseek-ai/deepseek-v3.2
+    api_key: os.environ/NIM1_KEY
+    rpm: 40
+  model_info:
+    id: nim-deepseek-3.2-1
+- model_name: deepseek-ai/deepseek-v3.2
+  litellm_params:
+    model: nvidia_nim/deepseek-ai/deepseek-v3.2
+    api_key: os.environ/NIM_API_KEY
+    rpm: 40
+  model_info:
+    id: nim-deepseek-3.2
+- model_name: moonshotai/kimi-k2.5
+  litellm_params:
+    model: nvidia_nim/moonshotai/kimi-k2.5
+    api_key: os.environ/NIM2_KEY
+    rpm: 40
+  model_info:
+    id: nim-kimi-k2.5-2
+- model_name: deepseek-ai/deepseek-v3.2
+  litellm_params:
+    model: nvidia_nim/deepseek-ai/deepseek-v3.2
+    api_key: os.environ/NIM1_KEY
+    rpm: 40
+  model_info:
+    id: nim-deepseek-3.2-3
+- model_name: deepseek-ai/deepseek-v3.2
+  litellm_params:
+    model: nvidia_nim/deepseek-ai/deepseek-v3.2
+    api_key: os.environ/NIM2_KEY
+    rpm: 40
+  model_info:
+    id: nim-deepseek-3.2-4
+- model_name: z-ai/glm4.7
+  litellm_params:
+    model: nvidia_nim/z-ai/glm4.7
+    api_key: os.environ/NIM1_KEY
+    rpm: 40
+  model_info:
+    id: nim-zai-glm4.7-1
+- model_name: z-ai/glm4.7
+  litellm_params:
+    model: nvidia_nim/z-ai/glm4.7
+    api_key: os.environ/NIM2_KEY
+    rpm: 40
+  model_info:
+    id: nim-zai-glm4.7-2
+- model_name: z-ai/glm4.7
+  litellm_params:
+    model: nvidia_nim/z-ai/glm4.7
+    api_key: os.environ/NIM_API_KEY
+    rpm: 40
+  model_info:
+    id: nim-zai-glm4.7-3
+- model_name: gemini-2.5-flash-lite
+  litellm_params:
+    model: vercel_ai_gateway/google/gemini-2.5-flash-lite
+    api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
+  model_info:
+    id: vercel-gw-gemini-2.5-flash-lite-main
+- model_name: gemini-2.5-flash-lite
+  litellm_params:
+    model: vercel_ai_gateway/google/gemini-2.5-flash-lite
+    api_key: os.environ/VERCELAI1
+  model_info:
+    id: vercel-gw-gemini-2.5-flash-lite-1
+- model_name: gemini-2.0-flash-lite
+  litellm_params:
+    model: vercel_ai_gateway/google/gemini-2.0-flash-lite
+    api_key: os.environ/VERCELAI2
+  model_info:
+    id: vercel-gw-gemini-2.0-flash-lite-2
+- model_name: moonshotai/kimi-k2-thinking
+  litellm_params:
+    model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
+    api_key: os.environ/VERCELAI1
+  model_info:
+    id: vercel-gw-kimi-k2-thinking-1
+- model_name: moonshotai/kimi-k2-thinking
+  litellm_params:
+    model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
+    api_key: os.environ/VERCELAI2
+  model_info:
+    id: vercel-gw-kimi-k2-thinking-2
+- model_name: moonshotai/kimi-k2-thinking
+  litellm_params:
+    model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
+    api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
+  model_info:
+    id: vercel-gw-kimi-k2-thinking-main
+- model_name: grok-4-fast-reasoning
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+    api_key: os.environ/VERCELAI2
+  model_info:
+    id: vercel-gw-grok-4-fast-reasoning-2
+- model_name: grok-4-fast-reasoning
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+    api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
+  model_info:
+    id: vercel-gw-grok-4-fast-reasoning-main
+- model_name: grok-4-fast-reasoning
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+    api_key: os.environ/VERCELAI1
+  model_info:
+    id: vercel-gw-grok-4-fast-reasoning-1
+- model_name: grok-4.1-fast-reasoning
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4.1-fast-reasoning
+    api_key: os.environ/VERCELAI2
+  model_info:
+    id: vercel-gw-grok-4.1-fast-reasoning-2
+- model_name: grok-4.1-fast-reasoning
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4.1-fast-reasoning
+    api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
+  model_info:
+    id: vercel-gw-grok-4.1-fast-reasoning-main
+- model_name: grok-4.1-fast-reasoning
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4.1-fast-reasoning
+    api_key: os.environ/VERCELAI1
+  model_info:
+    id: vercel-gw-grok-4.1-fast-reasoning-1
+- model_name: gemini-3-pro-preview
+  litellm_params:
+    model: vercel_ai_gateway/google/gemini-3-pro-preview
+    api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
+  model_info:
+    id: vercel-gw-gemini-3-pro-preview-main
+- model_name: gemini-3-pro-preview
+  litellm_params:
+    model: vercel_ai_gateway/google/gemini-3-pro-preview
+    api_key: os.environ/VERCELAI1
+  model_info:
+    id: vercel-gw-gemini-3-pro-preview-1
+- model_name: gemini-3-pro-preview
+  litellm_params:
+    model: vercel_ai_gateway/google/gemini-3-pro-preview
+    api_key: os.environ/VERCELAI2
+  model_info:
+    id: vercel-gw-gemini-3-pro-preview-2
+- model_name: gemini-3-flash
+  litellm_params:
+    model: gemini/gemini-3-flash-preview
+    api_key: os.environ/GEMINI_API_KEY_1
+    rpm: 5
+    tpm: 250000
+  model_info:
+    id: google-ai-studio-gemini-3-flash-1
+- model_name: gemini-3-flash
+  litellm_params:
+    model: gemini/gemini-3-flash-preview
+    api_key: os.environ/GEMINI_API_KEY_2
+    rpm: 5
+    tpm: 250000
+  model_info:
+    id: google-ai-studio-gemini-3-flash-2
+- model_name: gemini-3-flash
+  litellm_params:
+    model: gemini/gemini-3-flash-preview
+    api_key: os.environ/GEMINI_API_KEY_3
+    rpm: 5
+    tpm: 250000
+  model_info:
+    id: google-ai-studio-gemini-3-flash-3
+- model_name: gemini-3-flash
+  litellm_params:
+    model: vercel_ai_gateway/google/gemini-3-flash
+    api_key: os.environ/VERCELAI2
+  model_info:
+    id: vercel-gw-gemini-3-flash-2
+- model_name: text-embedding-3-small
+  litellm_params:
+    api_base: https://ai-gateway.vercel.sh/v1
+    model: openai/text-embedding-3-small
+    api_key: os.environ/VERCELAI1
+  model_info:
+    id: vercel-embeddings-3-small-1
+- model_name: text-embedding-3-small
+  litellm_params:
+    api_base: https://ai-gateway.vercel.sh/v1
+    model: openai/text-embedding-3-small
+    api_key: os.environ/VERCELAI2
+  model_info:
+    id: vercel-embeddings-3-small-2
+- model_name: grok-4
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4
+    api_key: os.environ/VERCELAI1
+  model_info:
+    id: vercel-gw-grok-4-1
+- model_name: gpt-5
+  litellm_params:
+    model: vercel_ai_gateway/openai/gpt-5
+    api_key: os.environ/VERCELAI1
+  model_info:
+    id: vercel-gw-gpt-5-1
+- model_name: gpt-5
+  litellm_params:
+    model: vercel_ai_gateway/openai/gpt-5
+    api_key: os.environ/VERCELAI2
+  model_info:
+    id: vercel-gw-gpt-5-2
+- model_name: gpt-5
+  litellm_params:
+    model: vercel_ai_gateway/openai/gpt-5
+    api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
+  model_info:
+    id: vercel-gw-gpt-5-main
+- model_name: gpt-5
+  litellm_params:
+    model: openai/gpt-5
+    api_base: https://api.voidai.app/v1
+    api_key: os.environ/VOIDAI_API_KEY
+    rpm: 40
+  model_info:
+    id: voidai-gpt-5
+- model_name: gpt-5
+  litellm_params:
+    model: openai/gpt-5
+    api_base: https://api2.aigcbest.top/v1
+    api_key: os.environ/AIGC1_API_KEY
+    rpm: 4
+  model_info:
+    id: aigc1-gpt-5
+- model_name: gpt-5
+  litellm_params:
+    model: openai/gpt-5
+    api_base: https://api2.aigcbest.top/v1
+    api_key: os.environ/AIGC2_API_KEY
+    rpm: 4
+  model_info:
+    id: aigc2-gpt-5
+- model_name: gpt-5
+  litellm_params:
+    model: openai/gpt-5
+    api_base: https://chatapi.littlewheat.com/v1
+    api_key: os.environ/LW1_API_KEY
+    rpm: 4
+  model_info:
+    id: littlewheat-gpt-5
+- model_name: smart-model
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4
+    api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
+  model_info:
+    id: smart-model-vercel-grok-4-main
+- model_name: smart-model
+  litellm_params:
+    model: openai/glm-4.5-flash
+    api_base: https://api.z.ai/api/paas/v4
+    api_key: os.environ/ZAI_API_KEY
+  model_info:
+    id: smart-model-zai-glm-4.5-flash
 litellm_settings:
   drop_params: true
   set_verbose: false
-
   fallbacks:
-    - "gemini-3-flash": ["gpt-5", "gpt-oss-120b", "moonshotai/kimi-k2-thinking"]
-    - "moonshotai/kimi-k2-thinking": ["glm-4.5-flash", "gpt-5", "grok-4.1-fast-reasoning"]
-    - "grok-4.1-fast-reasoning": ["grok-4-fast-reasoning", "gpt-5", "glm-4.5-flash"]
-    - "grok-4-fast-reasoning": ["gpt-5", "glm-4.5-flash"]
-    - "gpt-5": ["gpt-oss-120b"]
-    - "kimi-k2-instruct-0905": ["gemini-2.5-flash-lite"]
-    - "moonshotai/kimi-k2.5": ["z-ai/glm4.7", "gpt-5", "gemini-3-flash"]
-    
+  - gemini-3-flash:
+    - gpt-5
+    - gpt-oss-120b
+    - moonshotai/kimi-k2-thinking
+  - moonshotai/kimi-k2-thinking:
+    - glm-4.5-flash
+    - gpt-5
+    - grok-4.1-fast-reasoning
+  - grok-4.1-fast-reasoning:
+    - grok-4-fast-reasoning
+    - gpt-5
+    - glm-4.5-flash
+  - grok-4-fast-reasoning:
+    - gpt-5
+    - glm-4.5-flash
+  - gpt-5:
+    - gpt-oss-120b
+  - kimi-k2-instruct-0905:
+    - gemini-2.5-flash-lite
+  - moonshotai/kimi-k2.5:
+    - z-ai/glm4.7
+    - gpt-5
+    - gemini-3-flash
   context_window_fallbacks:
-    - "gpt-5": ["gemini-2.5-flash-lite"]
-    - "grok-4": ["gemini-2.5-flash-lite"]
-    - "grok-4-fast-reasoning": ["gemini-2.5-flash-lite"]
-    - "sonar-pro": ["gemini-2.5-flash-lite"]
-    - "gpt-4.1": ["gemini-2.5-flash-lite"]
-    - "kimi-k2-instruct-0905": ["gemini-2.5-flash-lite"]
-    - "smart-model": ["gemini-2.5-flash-lite"]
-
+  - gpt-5:
+    - gemini-2.5-flash-lite
+  - grok-4:
+    - gemini-2.5-flash-lite
+  - grok-4-fast-reasoning:
+    - gemini-2.5-flash-lite
+  - sonar-pro:
+    - gemini-2.5-flash-lite
+  - gpt-4.1:
+    - gemini-2.5-flash-lite
+  - kimi-k2-instruct-0905:
+    - gemini-2.5-flash-lite
+  - smart-model:
+    - gemini-2.5-flash-lite
 router_settings:
   routing_strategy: simple-shuffle
   num_retries: 3
   timeout: 60
   allowed_fails: 2
   cooldown_time: 900
-  # allowed_fails_policy:
-  #   AuthenticationErrorAllowedFails: 1
-  #   TimeoutErrorAllowedFails: 3
-  #   RateLimitErrorAllowedFails: 3
-
 mcp_servers:
   sequential_thinking:
-    url: "https://server.smithery.ai/@smithery-ai/server-sequential-thinking/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx"
+    url: https://server.smithery.ai/@smithery-ai/server-sequential-thinking/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx
   github:
-    url: "https://server.smithery.ai/@smithery-ai/github/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx"
+    url: https://server.smithery.ai/@smithery-ai/github/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx
   discord:
-    url: "https://server.smithery.ai/@codebyyassine/discordselfbot-mcp/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx"
+    url: https://server.smithery.ai/@codebyyassine/discordselfbot-mcp/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx
+  agentmail:
+    url: https://mcp.agentmail.to/sse?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc
