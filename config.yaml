@@ -466,7 +466,7 @@ model_list:
     id: smart-model-zai-glm-4.5-flash
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_1
     rpm: 10
     tpm: 60000
@@ -476,7 +476,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_2
     rpm: 10
     tpm: 60000
@@ -486,7 +486,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_3
     rpm: 10
     tpm: 60000
@@ -496,7 +496,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_4
     rpm: 10
     tpm: 60000
@@ -506,7 +506,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_5
     rpm: 10
     tpm: 60000
@@ -516,7 +516,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_6
     rpm: 10
     tpm: 60000
@@ -526,7 +526,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_7
     rpm: 10
     tpm: 60000
@@ -536,7 +536,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_8
     rpm: 10
     tpm: 60000
@@ -546,7 +546,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_9
     rpm: 10
     tpm: 60000
@@ -556,7 +556,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_10
     rpm: 10
     tpm: 60000
@@ -566,7 +566,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_11
     rpm: 10
     tpm: 60000
@@ -576,7 +576,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_12
     rpm: 10
     tpm: 60000
@@ -586,7 +586,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_13
     rpm: 10
     tpm: 60000
@@ -596,7 +596,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_14
     rpm: 10
     tpm: 60000
@@ -606,7 +606,7 @@ model_list:
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
   litellm_params:
-    model: cerebras/z-ai/glm4.7
+    model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_15
     rpm: 10
     tpm: 60000
