@@ -454,64 +454,189 @@ model_list:
 - model_name: smart-model
   litellm_params:
     model: vercel_ai_gateway/xai/grok-4
-    api_key: os.environ/VERCEL_AI_GATEWAY_API_KEY
-  model_info:
-    id: smart-model-vercel-grok-4-main
-- model_name: smart-model
+- model_name: gemini-2.5-flash-lite
   litellm_params:
-    model: openai/glm-4.5-flash
-    api_base: https://api.z.ai/api/paas/v4
-    api_key: os.environ/ZAI_API_KEY
+    model: vercel_ai_gateway/google/gemini-2.5-flash-lite
+    api_key: os.environ/VERCELAI3
   model_info:
-    id: smart-model-zai-glm-4.5-flash
-- model_name: z-ai/glm4.7
+    id: vercel-gw-gemini-2.5-flash-lite-3
+- model_name: gemini-2.5-flash-lite
   litellm_params:
-    model: cerebras/zai-glm-4.7
-    api_key: os.environ/CEREBRAS_KEY_1
-    rpm: 10
-    tpm: 60000
-    max_tokens: 8192
+    model: vercel_ai_gateway/google/gemini-2.5-flash-lite
+    api_key: os.environ/VERCELAI4
   model_info:
-    id: cerebras-glm4.7-1
-    max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+    id: vercel-gw-gemini-2.5-flash-lite-4
+- model_name: gemini-2.5-flash-lite
   litellm_params:
-    model: cerebras/zai-glm-4.7
-    api_key: os.environ/CEREBRAS_KEY_2
-    rpm: 10
-    tpm: 60000
-    max_tokens: 8192
+    model: vercel_ai_gateway/google/gemini-2.5-flash-lite
+    api_key: os.environ/VERCELAI5
   model_info:
-    id: cerebras-glm4.7-2
-    max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+    id: vercel-gw-gemini-2.5-flash-lite-5
+- model_name: gemini-2.0-flash-lite
   litellm_params:
-    model: cerebras/zai-glm-4.7
-    api_key: os.environ/CEREBRAS_KEY_3
-    rpm: 10
-    tpm: 60000
-    max_tokens: 8192
+    model: vercel_ai_gateway/google/gemini-2.0-flash-lite
+    api_key: os.environ/VERCELAI3
   model_info:
-    id: cerebras-glm4.7-3
-    max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+    id: vercel-gw-gemini-2.0-flash-lite-3
+- model_name: gemini-2.0-flash-lite
   litellm_params:
-    model: cerebras/zai-glm-4.7
-    api_key: os.environ/CEREBRAS_KEY_4
-    rpm: 10
-    tpm: 60000
-    max_tokens: 8192
+    model: vercel_ai_gateway/google/gemini-2.0-flash-lite
+    api_key: os.environ/VERCELAI4
   model_info:
-    id: cerebras-glm4.7-4
-    max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+    id: vercel-gw-gemini-2.0-flash-lite-4
+- model_name: gemini-2.0-flash-lite
   litellm_params:
-    model: cerebras/zai-glm-4.7
-    api_key: os.environ/CEREBRAS_KEY_5
-    rpm: 10
-    tpm: 60000
-    max_tokens: 8192
+    model: vercel_ai_gateway/google/gemini-2.0-flash-lite
+    api_key: os.environ/VERCELAI5
   model_info:
+    id: vercel-gw-gemini-2.0-flash-lite-5
+- model_name: moonshotai/kimi-k2-thinking
+  litellm_params:
+    model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
+    api_key: os.environ/VERCELAI3
+  model_info:
+    id: vercel-gw-kimi-k2-thinking-3
+- model_name: moonshotai/kimi-k2-thinking
+  litellm_params:
+    model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
+    api_key: os.environ/VERCELAI4
+  model_info:
+    id: vercel-gw-kimi-k2-thinking-4
+- model_name: moonshotai/kimi-k2-thinking
+  litellm_params:
+    model: vercel_ai_gateway/moonshotai/kimi-k2-thinking
+    api_key: os.environ/VERCELAI5
+  model_info:
+    id: vercel-gw-kimi-k2-thinking-5
+- model_name: grok-4-fast-reasoning
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+    api_key: os.environ/VERCELAI3
+  model_info:
+    id: vercel-gw-grok-4-fast-reasoning-3
+- model_name: grok-4-fast-reasoning
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+    api_key: os.environ/VERCELAI4
+  model_info:
+    id: vercel-gw-grok-4-fast-reasoning-4
+- model_name: grok-4-fast-reasoning
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4-fast-reasoning
+    api_key: os.environ/VERCELAI5
+  model_info:
+    id: vercel-gw-grok-4-fast-reasoning-5
+- model_name: grok-4.1-fast-reasoning
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4.1-fast-reasoning
+    api_key: os.environ/VERCELAI3
+  model_info:
+    id: vercel-gw-grok-4.1-fast-reasoning-3
+- model_name: grok-4.1-fast-reasoning
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4.1-fast-reasoning
+    api_key: os.environ/VERCELAI4
+  model_info:
+    id: vercel-gw-grok-4.1-fast-reasoning-4
+- model_name: grok-4.1-fast-reasoning
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4.1-fast-reasoning
+    api_key: os.environ/VERCELAI5
+  model_info:
+    id: vercel-gw-grok-4.1-fast-reasoning-5
+- model_name: gemini-3-pro-preview
+  litellm_params:
+    model: vercel_ai_gateway/google/gemini-3-pro-preview
+    api_key: os.environ/VERCELAI3
+  model_info:
+    id: vercel-gw-gemini-3-pro-preview-3
+- model_name: gemini-3-pro-preview
+  litellm_params:
+    model: vercel_ai_gateway/google/gemini-3-pro-preview
+    api_key: os.environ/VERCELAI4
+  model_info:
+    id: vercel-gw-gemini-3-pro-preview-4
+- model_name: gemini-3-pro-preview
+  litellm_params:
+    model: vercel_ai_gateway/google/gemini-3-pro-preview
+    api_key: os.environ/VERCELAI5
+  model_info:
+    id: vercel-gw-gemini-3-pro-preview-5
+- model_name: gemini-3-flash
+  litellm_params:
+    model: vercel_ai_gateway/google/gemini-3-flash
+    api_key: os.environ/VERCELAI3
+  model_info:
+    id: vercel-gw-gemini-3-flash-3
+- model_name: gemini-3-flash
+  litellm_params:
+    model: vercel_ai_gateway/google/gemini-3-flash
+    api_key: os.environ/VERCELAI4
+  model_info:
+    id: vercel-gw-gemini-3-flash-4
+- model_name: gemini-3-flash
+  litellm_params:
+    model: vercel_ai_gateway/google/gemini-3-flash
+    api_key: os.environ/VERCELAI5
+  model_info:
+    id: vercel-gw-gemini-3-flash-5
+- model_name: text-embedding-3-small
+  litellm_params:
+    api_base: https://ai-gateway.vercel.sh/v1
+    model: openai/text-embedding-3-small
+    api_key: os.environ/VERCELAI3
+  model_info:
+    id: vercel-embeddings-3-small-3
+- model_name: text-embedding-3-small
+  litellm_params:
+    api_base: https://ai-gateway.vercel.sh/v1
+    model: openai/text-embedding-3-small
+    api_key: os.environ/VERCELAI4
+  model_info:
+    id: vercel-embeddings-3-small-4
+- model_name: text-embedding-3-small
+  litellm_params:
+    api_base: https://ai-gateway.vercel.sh/v1
+    model: openai/text-embedding-3-small
+    api_key: os.environ/VERCELAI5
+  model_info:
+    id: vercel-embeddings-3-small-5
+- model_name: grok-4
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4
+    api_key: os.environ/VERCELAI3
+  model_info:
+    id: vercel-gw-grok-4-3
+- model_name: grok-4
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4
+    api_key: os.environ/VERCELAI4
+  model_info:
+    id: vercel-gw-grok-4-4
+- model_name: grok-4
+  litellm_params:
+    model: vercel_ai_gateway/xai/grok-4
+    api_key: os.environ/VERCELAI5
+  model_info:
+    id: vercel-gw-grok-4-5
+- model_name: gpt-5
+  litellm_params:
+    model: vercel_ai_gateway/openai/gpt-5
+    api_key: os.environ/VERCELAI3
+  model_info:
+    id: vercel-gw-gpt-5-3
+- model_name: gpt-5
+  litellm_params:
+    model: vercel_ai_gateway/openai/gpt-5
+    api_key: os.environ/VERCELAI4
+  model_info:
+    id: vercel-gw-gpt-5-4
+- model_name: gpt-5
+  litellm_params:
+    model: vercel_ai_gateway/openai/gpt-5
+    api_key: os.environ/VERCELAI5
+  model_info:
+    id: vercel-gw-gpt-5-5
     id: cerebras-glm4.7-5
     max_input_tokens: 131072
 - model_name: z-ai/glm4.7
