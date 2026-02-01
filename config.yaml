@@ -639,7 +639,7 @@ model_list:
     id: vercel-gw-gpt-5-5
     id: cerebras-glm4.7-5
     max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+- model_name: z-ai/glm4.7-cerebras
   litellm_params:
     model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_6
@@ -649,7 +649,7 @@ model_list:
   model_info:
     id: cerebras-glm4.7-6
     max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+- model_name: z-ai/glm4.7-cerebras
   litellm_params:
     model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_7
@@ -659,7 +659,7 @@ model_list:
   model_info:
     id: cerebras-glm4.7-7
     max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+- model_name: z-ai/glm4.7-cerebras
   litellm_params:
     model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_8
@@ -669,7 +669,7 @@ model_list:
   model_info:
     id: cerebras-glm4.7-8
     max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+- model_name: z-ai/glm4.7-cerebras
   litellm_params:
     model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_9
@@ -679,7 +679,7 @@ model_list:
   model_info:
     id: cerebras-glm4.7-9
     max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+- model_name: z-ai/glm4.7-cerebras
   litellm_params:
     model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_10
@@ -689,7 +689,7 @@ model_list:
   model_info:
     id: cerebras-glm4.7-10
     max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+- model_name: z-ai/glm4.7-cerebras
   litellm_params:
     model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_11
@@ -699,7 +699,7 @@ model_list:
   model_info:
     id: cerebras-glm4.7-11
     max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+- model_name: z-ai/glm4.7-cerebras
   litellm_params:
     model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_12
@@ -709,7 +709,7 @@ model_list:
   model_info:
     id: cerebras-glm4.7-12
     max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+- model_name: z-ai/glm4.7-cerebras
   litellm_params:
     model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_13
@@ -719,7 +719,7 @@ model_list:
   model_info:
     id: cerebras-glm4.7-13
     max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+- model_name: z-ai/glm4.7-cerebras
   litellm_params:
     model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_14
@@ -729,7 +729,7 @@ model_list:
   model_info:
     id: cerebras-glm4.7-14
     max_input_tokens: 131072
-- model_name: z-ai/glm4.7
+- model_name: z-ai/glm4.7-cerebras
   litellm_params:
     model: cerebras/zai-glm-4.7
     api_key: os.environ/CEREBRAS_KEY_15
@@ -766,6 +766,8 @@ litellm_settings:
     - z-ai/glm4.7
     - gpt-5
     - gemini-3-flash
+  - z-ai/glm4.7:
+    - z-ai/glm4.7-cerebras
   context_window_fallbacks:
   - gpt-5:
     - gemini-2.5-flash-lite
