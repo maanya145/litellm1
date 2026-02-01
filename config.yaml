@@ -770,7 +770,7 @@ model_list:
   litellm_params:
     model: fireworks_ai/accounts/fireworks/models/glm-4p7
     api_key: os.environ/FIREWORKS_KEY_1
-    rpm: 6000
+    rpm: 40
     tpm: 500000
     max_tokens: 32768
   model_info:
@@ -810,7 +810,7 @@ model_list:
   litellm_params:
     model: fireworks_ai/accounts/fireworks/models/minimax-m2
     api_key: os.environ/FIREWORKS_KEY_1
-    rpm: 6000
+    rpm: 40
     tpm: 500000
     max_tokens: 32768
   model_info:
@@ -850,7 +850,7 @@ model_list:
   litellm_params:
     model: fireworks_ai/accounts/fireworks/models/kimi-k2p5
     api_key: os.environ/FIREWORKS_KEY_1
-    rpm: 6000
+    rpm: 40
     tpm: 500000
     max_tokens: 32768
   model_info:
