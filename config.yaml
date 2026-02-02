@@ -940,6 +940,33 @@ router_settings:
   timeout: 60
   allowed_fails: 2
   cooldown_time: 900
+# UI Configuration
+general_settings:
+  # Enable the UI
+  ui: true
+  # Admin credentials (set in Railway environment variables)
+  # LITELLM_MASTER_KEY and LITELLM_SALT_KEY should be set in Railway
+  
+  # Database for usage tracking (PostgreSQL)
+  # DATABASE_URL should be set in Railway environment variables
+  # Format: postgresql://username:password@host:port/database
+  
+  # Proxy server settings
+  proxy_batch_write_at: 60
+  proxy_batch_size: 1000
+  
+# Usage tracking
+litellm_settings:
+  success_callback: ["postgres"]
+  failure_callback: ["postgres"]
+  service_callback: ["postgres"]
+  
+  # Enable usage tracking
+  cache: true
+  cache_params:
+    type: redis
+    url: os.environ/REDIS_URL  # Optional: for caching (set in Railway)
+
 mcp_servers:
   sequential_thinking:
     url: https://server.smithery.ai/@smithery-ai/server-sequential-thinking/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx
