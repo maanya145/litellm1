@@ -889,6 +889,9 @@ model_list:
 litellm_settings:
   drop_params: true
   set_verbose: false
+  success_callback: ["postgres"]
+  failure_callback: ["postgres"]
+  service_callback: ["postgres"]
   fallbacks:
   - gemini-3-flash:
     - gpt-5
@@ -940,6 +943,7 @@ router_settings:
   timeout: 60
   allowed_fails: 2
   cooldown_time: 900
+
 # UI Configuration
 general_settings:
   # Enable the UI
@@ -955,13 +959,8 @@ general_settings:
   proxy_batch_write_at: 60
   proxy_batch_size: 1000
   
-# Usage tracking
-litellm_settings:
-  success_callback: ["postgres"]
-  failure_callback: ["postgres"]
-  service_callback: ["postgres"]
-  
-  # Caching disabled - no Redis instance configured
+# Usage tracking - merged into litellm_settings above
+# Note: success_callback, failure_callback, service_callback moved to first litellm_settings block
   # To enable caching, add a Redis instance on Railway and set REDIS_URL
   cache: false
 
