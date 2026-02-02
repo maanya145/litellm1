@@ -961,11 +961,9 @@ litellm_settings:
   failure_callback: ["postgres"]
   service_callback: ["postgres"]
   
-  # Enable usage tracking
-  cache: true
-  cache_params:
-    type: redis
-    url: os.environ/REDIS_URL  # Optional: for caching (set in Railway)
+  # Caching disabled - no Redis instance configured
+  # To enable caching, add a Redis instance on Railway and set REDIS_URL
+  cache: false
 
 mcp_servers:
   sequential_thinking:
