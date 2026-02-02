@@ -846,6 +846,13 @@ model_list:
   model_info:
     id: fireworks-minimax-m2-4
     max_input_tokens: 32768
+- model_name: minimax-text-01
+  litellm_params:
+    model: minimax/minimax-text-01
+    api_key: os.environ/MINIMAX_API_KEY
+    rpm: 60
+  model_info:
+    id: minimax-text-01
 - model_name: moonshotai/kimi-k2.5
   litellm_params:
     model: fireworks_ai/accounts/fireworks/models/kimi-k2p5
