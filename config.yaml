@@ -959,6 +959,10 @@ general_settings:
   proxy_batch_write_at: 60
   proxy_batch_size: 1000
   
+  # Enable request/response logging for UI viewing
+  store_model_in_db: true
+  store_prompts_in_spend_logs: true
+  
 # Usage tracking - merged into litellm_settings above
 # Note: success_callback, failure_callback, service_callback moved to first litellm_settings block
   # To enable caching, add a Redis instance on Railway and set REDIS_URL
