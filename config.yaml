@@ -965,12 +965,14 @@ litellm_settings:
   # To enable caching, add a Redis instance on Railway and set REDIS_URL
   cache: false
 
-mcp_servers:
-  sequential_thinking:
-    url: https://server.smithery.ai/@smithery-ai/server-sequential-thinking/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx
-  github:
-    url: https://server.smithery.ai/@smithery-ai/github/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx
-  discord:
-    url: https://server.smithery.ai/@codebyyassine/discordselfbot-mcp/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx
-  agentmail:
-    url: https://mcp.agentmail.to/sse?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc
+# MCP servers disabled - causing startup timeouts/crashes
+# Can re-enable once the proxy is stable
+# mcp_servers:
+#   sequential_thinking:
+#     url: https://server.smithery.ai/@smithery-ai/server-sequential-thinking/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx
+#   github:
+#     url: https://server.smithery.ai/@smithery-ai/github/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx
+#   discord:
+#     url: https://server.smithery.ai/@codebyyassine/discordselfbot-mcp/mcp?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc&profile=subjective-cat-qX93Yx
+#   agentmail:
+#     url: https://mcp.agentmail.to/sse?api_key=c51f0d96-1719-4c10-8f64-16b63cd9a1cc
