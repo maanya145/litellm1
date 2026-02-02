@@ -4,7 +4,10 @@ FROM python:3.11-slim
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     ca-certificates \
+    git \
     && rm -rf /var/lib/apt/lists/*
+
+# Force cache invalidation - Build 2026-02-02-06
 
 WORKDIR /app
 
