@@ -13,6 +13,12 @@ RUN pip install --upgrade pip \
     # Added 'prisma' extra here
     && pip install --no-cache-dir "litellm[proxy,prisma]"
 
+# Install prisma client and generate
+RUN pip install --no-cache-dir prisma httpx
+WORKDIR /usr/local/lib/python3.11/site-packages/litellm/proxy
+RUN prisma generate 2>/dev/null || true
+WORKDIR /app
+
 # ---- app config (changes often → later layer) ----
 COPY config.yaml /app/config.yaml
 
