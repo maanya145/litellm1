@@ -894,6 +894,14 @@ model_list:
   model_info:
     id: fireworks-kimi-k2p5-4
     max_input_tokens: 32768
+- model_name: kimi-coding/k2p5
+  litellm_params:
+    model: openai/moonshotai/kimi-k2.5
+    api_base: https://api.moonshot.cn/v1
+    api_key: os.environ/KIMI_API_KEY
+    rpm: 60
+  model_info:
+    id: kimi-coding-k2p5-direct
 litellm_settings:
   drop_params: true
   set_verbose: false
